@@ -15,7 +15,8 @@ def encrypt_email():
         file = open('email_data.txt', 'wb')
         file.write(f.encrypt(input('Enter your gmail username: ').encode()))
         file.write('\n'.encode())
-        file.write(f.encrypt(input('Enter your gmail password (to be encrypted): ').encode()))
+        passwd = getpass()
+        file.write(f.encrypt(passwd.encode()))
         file.write('\n'.encode())
         file.write(key)
         file.close()
@@ -46,13 +47,24 @@ def send_email(msg, usrname, password):
 
 # need to add in functionality for hyperlinks to store pages...
 def main():
+    if len(sys.argv) != 2:
+        print("usage: \'python3 email_driver.py <data file>\"" )
+        exit()
+        
+    filenm = sys.argv[1]
+    print(filenm)
     usr_data = encrypt_email()
     f = Fernet(usr_data[2])
 
+    data_file = open(filenm, 'r')
+    TEXT = '' # empty string for contents of the email
+    TEXT = data_file.read()
+    
     # make sure the element reference is not stale and we can access data
     stale = True
-    SUBJECT = 'Updated Stock Info'
-    message = 'Subject: {}\n\n{}'.format(SUBJECT, 'Here is the updated weather report:\n' + 'kljasdfjkldsfaklj;sadf;ljk')
+    SUBJECT = 'Updated Weather Info'
+    
+    message = 'Subject: {}\n\n{}'.format(SUBJECT, 'Here is the updated weather report:\n' + TEXT)
 
     if (stale): #'In Stock' in TEXT):
         print('Sending email...')
@@ -61,8 +73,7 @@ def main():
         except Exception as exception:
             print(type(exception))
             print('Could not send email, please check login.')
-    else:
-        print('No new stock, terminating.')
+        exit()
 
 
 if __name__ == "__main__":

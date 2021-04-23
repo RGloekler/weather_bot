@@ -1,0 +1,105 @@
+
+ BME280 Init Result is:0 
+Temperature           Pressure             Humidity
+temperature:20.65*C   pressure:995.64hPa   humidity:38.23%
+temperature:20.66*C   pressure:995.64hPa   humidity:38.13%
+temperature:20.66*C   pressure:995.64hPa   humidity:38.13%
+temperature:20.66*C   pressure:995.64hPa   humidity:38.13%
+temperature:20.67*C   pressure:995.64hPa   humidity:38.28%
+temperature:20.67*C   pressure:995.64hPa   humidity:38.28%
+temperature:20.67*C   pressure:995.63hPa   humidity:38.12%
+temperature:20.68*C   pressure:995.63hPa   humidity:38.33%
+temperature:20.68*C   pressure:995.63hPa   humidity:38.12%
+temperature:20.68*C   pressure:995.63hPa   humidity:38.12%
+temperature:20.69*C   pressure:995.63hPa   humidity:38.12%
+temperature:20.70*C   pressure:995.63hPa   humidity:38.22%
+temperature:20.70*C   pressure:995.63hPa   humidity:38.22%
+temperature:20.70*C   pressure:995.63hPa   humidity:38.13%
+temperature:20.71*C   pressure:995.63hPa   humidity:38.10%
+temperature:20.71*C   pressure:995.63hPa   humidity:38.11%
+temperature:20.71*C   pressure:995.63hPa   humidity:38.11%
+temperature:20.72*C   pressure:995.62hPa   humidity:38.12%
+temperature:20.72*C   pressure:995.62hPa   humidity:37.86%
+temperature:20.72*C   pressure:995.62hPa   humidity:37.86%
+temperature:20.73*C   pressure:995.62hPa   humidity:38.12%
+temperature:20.73*C   pressure:995.62hPa   humidity:38.16%
+temperature:20.74*C   pressure:995.62hPa   humidity:38.10%
+temperature:20.74*C   pressure:995.62hPa   humidity:38.10%
+temperature:20.74*C   pressure:995.62hPa   humidity:38.10%
+temperature:20.74*C   pressure:995.62hPa   humidity:38.01%
+temperature:20.74*C   pressure:995.62hPa   humidity:38.01%
+temperature:20.75*C   pressure:995.62hPa   humidity:38.12%
+temperature:20.75*C   pressure:995.62hPa   humidity:38.08%
+temperature:20.75*C   pressure:995.62hPa   humidity:38.25%
+temperature:20.75*C   pressure:995.62hPa   humidity:38.25%
+temperature:20.76*C   pressure:995.62hPa   humidity:38.10%
+temperature:20.76*C   pressure:995.62hPa   humidity:38.17%
+temperature:20.76*C   pressure:995.62hPa   humidity:38.17%
+temperature:20.76*C   pressure:995.62hPa   humidity:38.11%
+temperature:20.77*C   pressure:995.62hPa   humidity:38.09%
+temperature:20.77*C   pressure:995.62hPa   humidity:37.90%
+temperature:20.77*C   pressure:995.62hPa   humidity:37.90%
+temperature:20.77*C   pressure:995.61hPa   humidity:38.10%
+temperature:20.77*C   pressure:995.61hPa   humidity:38.05%
+temperature:20.77*C   pressure:995.61hPa   humidity:38.05%
+temperature:20.78*C   pressure:995.61hPa   humidity:38.30%
+temperature:20.78*C   pressure:995.61hPa   humidity:38.10%
+temperature:20.78*C   pressure:995.61hPa   humidity:38.06%
+temperature:20.78*C   pressure:995.61hPa   humidity:38.06%
+temperature:20.78*C   pressure:995.61hPa   humidity:38.08%
+temperature:20.79*C   pressure:995.62hPa   humidity:38.11%
+temperature:20.79*C   pressure:995.62hPa   humidity:38.09%
+temperature:20.79*C   pressure:995.62hPa   humidity:38.09%
+temperature:20.79*C   pressure:995.62hPa   humidity:38.09%
+Si145 Init success !
+UV:  0.0
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.01
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
+UV:  0.02
