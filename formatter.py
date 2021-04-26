@@ -51,16 +51,15 @@ def format():
     #Find Averages for each variable. Pop first uv reading to prevent sensor anomalies.
     uv_index.pop()
     uv_avg = sum(uv_index)/len(uv_index)
-<<<<<<< HEAD
+
     temp_c.pop()
     temp_avg = sum(temp_c)/len(temp_c)
     pressure_hpa.pop()
     pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
     humidity.pop()
-=======
+
     temp_avg = sum(temp_c)/len(temp_c)
     pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
->>>>>>> 4467725d9e5e4ae504d5a1de739bae92b5886ce1
     humidity_avg = sum(humidity)/len(humidity)
 
     #Open and write to the format.txt file. Should overwrite previous file not append.
