@@ -1,0 +1,9 @@
+Greetings from WEATHER_BOT!. Here is your updated weather information.
+
+April 26, 2021
+04:34:21 PM
+
+Temperature (C): 10.16
+Humidity (%): 18.68
+Air Pressure (hPA): 487.86
+UV Index (25mW/m^2): 0.01
