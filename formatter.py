@@ -8,9 +8,6 @@ from datetime import datetime
 # The function format which is executed from the main function below reads through
 # data.txt, sorting each valid number into a list. Averages are found for each variable.
 #
-# EACH VARIABLE NEEDS A SAMPLE SIZE OF 101. Each variable has their first element popped
-# to prevent anomalies from the sensor input. Each average is found with divisor of 100.
-#
 # The current time, date, and averages are written into the other text file called
 # format.txt. This can be attached or read into the email driver.
     #Email body format is as follows:
@@ -51,14 +48,19 @@ def format():
     #Done reading. Close data.txt.
     raw_data.close()
 
-    #Find Averages for each variable. Pop first to prevent sensor anomalies.
+    #Find Averages for each variable. Pop first uv reading to prevent sensor anomalies.
     uv_index.pop()
     uv_avg = sum(uv_index)/len(uv_index)
+<<<<<<< HEAD
     temp_c.pop()
     temp_avg = sum(temp_c)/len(temp_c)
     pressure_hpa.pop()
     pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
     humidity.pop()
+=======
+    temp_avg = sum(temp_c)/len(temp_c)
+    pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
+>>>>>>> 4467725d9e5e4ae504d5a1de739bae92b5886ce1
     humidity_avg = sum(humidity)/len(humidity)
 
     #Open and write to the format.txt file. Should overwrite previous file not append.
@@ -68,7 +70,7 @@ def format():
     date_var = date.today().strftime("%B %d, %Y")
     time_var = datetime.now().strftime("%I:%M:%S %p")
     #Strings to add to the email body.
-    greeting = "Greetings from WEATHER_BOT!. Here is your updated weather information.\n"
+    greeting = "Greetings from WEATHER_BOT! Here is your updated weather information.\n"
     date_string = f"{date_var}\n"
     time_string = f"{time_var}\n"
     temp_string = f"Temperature (C): {temp_avg:.2f}\n"
