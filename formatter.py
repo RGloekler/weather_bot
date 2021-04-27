@@ -51,13 +51,6 @@ def format():
     #Find Averages for each variable. Pop first uv reading to prevent sensor anomalies.
     uv_index.pop()
     uv_avg = sum(uv_index)/len(uv_index)
-
-    temp_c.pop()
-    temp_avg = sum(temp_c)/len(temp_c)
-    pressure_hpa.pop()
-    pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
-    humidity.pop()
-
     temp_avg = sum(temp_c)/len(temp_c)
     pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
     humidity_avg = sum(humidity)/len(humidity)
