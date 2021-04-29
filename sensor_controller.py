@@ -47,7 +47,6 @@ while True:
     Sensor.Si1145_close()
 
   Sensor.Si1145_close()
-uv_avg.pop(0)
 GPIO.output(17, GPIO.LOW)
 GPIO.output(22, GPIO.HIGH)
 
