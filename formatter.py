@@ -34,7 +34,7 @@ def format():
     #For each line in data.txt
     for line in raw_data:
         raw_string = line
-        buffer = re.findall("(\d+\.\d{1,2})", raw_string)
+        buffer = re.findall("(\d+\.\d{2})", raw_string)
         #If buffer has 1 element. It is the UV sensor.
         if len(buffer) == 1:
             uv_index.append(float(buffer[0]))
@@ -48,8 +48,7 @@ def format():
     #Done reading. Close data.txt.
     raw_data.close()
 
-    #Find Averages for each variable. Pop first uv reading to prevent sensor anomalies.
-    uv_index.pop()
+    #Find Averages for each variable.
     uv_avg = sum(uv_index)/len(uv_index)
     temp_avg = sum(temp_c)/len(temp_c)
     pressure_avg = sum(pressure_hpa)/len(pressure_hpa)
@@ -62,7 +61,7 @@ def format():
     date_var = date.today().strftime("%B %d, %Y")
     time_var = datetime.now().strftime("%I:%M:%S %p")
     #Strings to add to the email body.
-    greeting = "Greetings from WEATHER_BOT! Here is your updated weather information.\n"
+    greeting = "Greetings from WEATHER_BOT!\n"
     date_string = f"{date_var}\n"
     time_string = f"{time_var}\n"
     temp_string = f"Temperature (C): {temp_avg:.2f}\n"
